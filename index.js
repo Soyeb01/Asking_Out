@@ -6,14 +6,13 @@ var left;
 var bottom;
 var clicked=0;
 
-
 no_el.addEventListener("click", just);
 yes_el.addEventListener("click", wow);
 
 function just(){
     clicked++;
-    left=Math.floor(Math.random()*251)-90;
-    bottom=Math.floor(Math.random()*591)-350;
+    left=Math.floor(Math.random()*151)-90;
+    bottom=Math.floor(Math.random()*391)-150;
     no_el.style.left=left+"px";
     no_el.style.bottom=bottom+"px";
     if(clicked===3){
@@ -30,5 +29,5 @@ function just(){
 function wow(){
     no_el.style.visibility="hidden"
     good_el.innerText="You said Yesssss!!!!!"
-    chap_el.setAttribute("src","/resources/yayy.gif")
+    chap_el.setAttribute("src","./resources/yayy.gif")
 }
